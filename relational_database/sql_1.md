@@ -41,3 +41,33 @@ SELECT name, salary FROM employees WHERE salary > 50000;
 ```
 INSERT INTO employees (name, position, salary) VALUES ('John Doe', 'Developer', 60000);
 ```
+
+## 4. Write a query to update the salary of an employee with ID 5.
+
+```
+UPDATE employees SET salary = 65000 WHERE id = 5;
+```
+
+## 5. Write a query to delete records where the employee's position is 'Intern'.
+
+```
+DELETE FROM employees WHERE position = 'Intern';
+```
+
+## 6. Write a query to find the total number of employees.
+
+```
+SELECT COUNT(*) FROM employees;
+```
+
+
+## 7. Write a query to list employees ordered by salary descending.
+```
+SELECT * FROM employees ORDER BY salary DESC;
+```
+
+## 8. Write a query to find employees whose name starts with 'A'.
+
+```
+SELECT * FROM employees WHERE name LIKE 'A%';
+```
